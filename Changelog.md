@@ -4,12 +4,14 @@ Language Features:
 
 
 Compiler Features:
+ * ABI: Include events in the ABI that are emitted by but not defined inside a contract.
 
 
 Bugfixes:
 
 
 AST Changes:
+ * Add field ``emittedEvents`` to ``ContractDefinition`` which contains the AST IDs of all inherited and emitted events.
 
 
 ### 0.8.2 (2021-03-02)
