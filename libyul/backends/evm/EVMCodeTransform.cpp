@@ -689,7 +689,7 @@ namespace
 bool statementNeedsReturnVariableSetup(Statement const& _statement, vector<TypedName> const& _returnVariables)
 {
 	if (holds_alternative<FunctionDefinition>(_statement))
-		return false;
+		return true;
 	if (
 		holds_alternative<ExpressionStatement>(_statement) ||
 		holds_alternative<Assignment>(_statement)
